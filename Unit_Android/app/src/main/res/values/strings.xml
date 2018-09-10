@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Unit_Android</string>
+
+    <string-array name="unit_title_array">
+        <item>Glide</item>
+        <item>RecyclerView</item>
+        <item>StatusBar</item>
+        <item>Fragment</item>
+        <item>App启动性能优化</item>
+        <item>动态权限获取</item>
+    </string-array>
+
 </resources>

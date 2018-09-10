@@ -3,5 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
     <color name="activity_layout_background">#FFFFFF</color>
+    <color name="main_list_btn_color_normal">#DDDDDD</color>
+    <color name="main_list_btn_color_pressed">#AAAAAA</color>
 </resources>
