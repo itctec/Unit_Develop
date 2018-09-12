@@ -10,4 +10,31 @@
         <item>动态权限获取</item>
     </string-array>
 
+    <string-array name="permission_title_array">
+        <item>读SD卡</item>
+        <item>写SD卡</item>
+        <item>读短信</item>
+        <item>收短信</item>
+        <item>发短信</item>
+        <item>收彩信</item>
+        <item>收WAP推送</item>
+        <item>获取详细定位</item>
+        <item>获取粗略定位</item>
+        <item>访问麦克风</item>
+        <item>访问相机</item>
+        <item>访问身体传感器</item>
+        <item>读日历数据</item>
+        <item>写日历数据</item>
+        <item>读通话记录</item>
+        <item>写通话记录</item>
+        <item>拨号</item>
+        <item>获取电话状态</item>
+        <item>使用SIP</item>
+        <item>去电监听</item>
+        <item>添加语音信箱</item>
+        <item>写通讯录</item>
+        <item>读通讯录</item>
+        <item>获取账号</item>
+    </string-array>
+
 </resources>

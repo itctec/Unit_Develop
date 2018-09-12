@@ -77,6 +77,15 @@ public class SPUtil {
         return getPreferneces().getInt(key, 0);
     }
 
+
+    public static void putLong(String key, long value) {
+        getPreferneces().edit().putLong(key, value).commit();
+    }
+
+    public static long getLong(String key) {
+        return getPreferneces().getLong(key, 0);
+    }
+
     /**
      * 保存布尔值
      *
@@ -86,13 +95,6 @@ public class SPUtil {
         getPreferneces().edit().putBoolean(key, value).commit();
     }
 
-    public static void putLong(String key, long value) {
-        getPreferneces().edit().putLong(key, value).commit();
-    }
-
-    public static long getLong(String key) {
-        return getPreferneces().getLong(key, 0);
-    }
 
     /**
      * t 读取布尔值

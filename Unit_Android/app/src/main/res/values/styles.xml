@@ -10,4 +10,17 @@
         <item name="android:windowBackground">@drawable/pic_list_start</item>
     </style>
 
+    <style name="ActivityTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/pic_list_start</item>
+        <item name="android:windowAnimationStyle">@style/ActivitySwitch_Animation</item>
+    </style>
+
+    <style name="ActivitySwitch_Animation" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_anim_alpha_up_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_anim_alpha_down_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_anim_alpha_down_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_anim_alpha_up_out</item>
+    </style>
+
 </resources>

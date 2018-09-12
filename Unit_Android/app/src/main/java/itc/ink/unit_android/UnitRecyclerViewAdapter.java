@@ -11,6 +11,7 @@ import android.widget.Button;
 import java.util.List;
 
 import itc.ink.unit_android.unit_activity.GlideActivity;
+import itc.ink.unit_android.unit_activity.PermissionActivity;
 
 /**
  * Created by yangwenjiang on 2018/9/7.
@@ -44,6 +45,9 @@ public class UnitRecyclerViewAdapter extends RecyclerView.Adapter<UnitRecyclerVi
                 switch(mData.get(position)){
                     case "Glide":
                         intent.setClass(mContext, GlideActivity.class);
+                        break;
+                    case "动态权限获取":
+                        intent.setClass(mContext, PermissionActivity.class);
                         break;
                 }
 

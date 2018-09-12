@@ -20,7 +20,7 @@ import itc.ink.unit_android.tools.StatusBarStyle;
 public class LaunchActivity extends Activity {
 
     private final int MSG_FINISH_LAUNCHACTIVITY = 0x01;
-    private final int LAUNCHACTIVITY_STAY_TIME = 2000;
+    private final int LAUNCHACTIVITY_STAY_TIME = 1000;
 
     private boolean firstExec=true;
 
