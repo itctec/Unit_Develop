@@ -34,17 +34,17 @@ public class DynamicPermission {
         /**
          * 检查是否有权限
          */
-        public boolean hasPermission(Activity mActivity, String permission);
+        boolean hasPermission(Activity mActivity, String permission);
 
         /**
          * 单个权限需求中调用，弹出权限提示对话框
          */
-        public void showMissingPermissionDialog(Activity mActivity, String msgText);
+        void showMissingPermissionDialog(Activity mActivity, String msgText);
 
         /**
          * 动态申请权限
          */
-        public boolean requestPermissions(Activity mActivity, int mRequestCode, String[] mPermissions);
+        boolean requestPermissions(Activity mActivity, int mRequestCode, String[] mPermissions);
 
     }
 

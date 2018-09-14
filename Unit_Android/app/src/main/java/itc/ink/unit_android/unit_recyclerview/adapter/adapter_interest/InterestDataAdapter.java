@@ -11,6 +11,7 @@ import android.widget.Toast;
 import java.util.List;
 
 import itc.ink.unit_android.R;
+import itc.ink.unit_android.unit_recyclerview.adapter.MainWrapperAdapter;
 import itc.ink.unit_android.unit_recyclerview.mode.mode_action.ActionDataModel;
 import itc.ink.unit_android.unit_recyclerview.mode.mode_interest.InterestDataModel;
 
@@ -52,7 +53,7 @@ public class InterestDataAdapter extends RecyclerView.Adapter<InterestDataAdapte
         return mData.size();
     }
 
-    public static class VH extends RecyclerView.ViewHolder{
+    public static class VH extends MainWrapperAdapter.WrapperVH{
         public TextView interestTitleTextView;
         public TextView interestSummaryTextTextView;
         public TextView interestSupportNumTextView;

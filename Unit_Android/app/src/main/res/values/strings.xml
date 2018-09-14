@@ -52,10 +52,10 @@
     </string-array>
 
     <string-array name="array_recyclerview_action_datetime">
-        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
-        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
-        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
-        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
+        <item>XX年XX月XX日 XX:XX - XX年XX月XX日 XX:XX</item>
+        <item>XX年XX月XX日 XX:XX - XX年XX月XX日 XX:XX</item>
+        <item>XX年XX月XX日 XX:XX - XX年XX月XX日 XX:XX</item>
+        <item>XX年XX月XX日 XX:XX - XX年XX月XX日 XX:XX</item>
     </string-array>
 
     <string-array name="array_recyclerview_action_site">
@@ -66,10 +66,10 @@
     </string-array>
 
     <string-array name="array_recyclerview_action_summary">
-        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
-        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
-        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
-        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
     </string-array>
 
     <string-array name="array_recyclerview_interest_title">

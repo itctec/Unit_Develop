@@ -48,7 +48,7 @@ public class MainActivity extends Activity {
         contentRvActionListDataAdapter=new ActionDataAdapter(MainActivity.this,mActionData);
         mInterestData = initInterestData();
         contentRvInterestListDataAdapter = new InterestDataAdapter(MainActivity.this,mInterestData);
-        contentRvWrapperAdapter = new MainWrapperAdapter(contentRvActionListDataAdapter,contentRvInterestListDataAdapter);
+        contentRvWrapperAdapter = new MainWrapperAdapter(MainActivity.this, contentRvActionListDataAdapter, contentRvInterestListDataAdapter);
         contentRecyclerView.setAdapter(contentRvWrapperAdapter);
 
         contentRvLayoutManager = new LinearLayoutManager(this);

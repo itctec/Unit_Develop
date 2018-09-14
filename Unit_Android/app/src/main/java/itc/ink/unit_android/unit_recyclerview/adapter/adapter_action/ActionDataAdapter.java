@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import java.util.List;
 import itc.ink.unit_android.R;
+import itc.ink.unit_android.unit_recyclerview.adapter.MainWrapperAdapter;
 import itc.ink.unit_android.unit_recyclerview.mode.mode_action.ActionDataModel;
 
 /**
@@ -42,7 +43,7 @@ public class ActionDataAdapter extends RecyclerView.Adapter<ActionDataAdapter.VH
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext,actionDataItem.actionTitle+"被点击",Toast.LENGTH_LONG).show();
+                Toast.makeText(mContext,actionDataItem.actionTitle+"被点击",Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -52,7 +53,7 @@ public class ActionDataAdapter extends RecyclerView.Adapter<ActionDataAdapter.VH
         return mData.size();
     }
 
-    public static class VH extends RecyclerView.ViewHolder{
+    public static class VH extends MainWrapperAdapter.WrapperVH{
         public TextView actionTitleTextView;
         public TextView actionPublicityTextTextView;
         public TextView actionDatetimeTextView;

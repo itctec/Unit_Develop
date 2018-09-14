@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/recommend_Choiceness_Interest_ListItem_Vertical_Guideline"
-        app:layout_constraintDimensionRatio="4:3"/>
+        app:layout_constraintDimensionRatio="5:4"/>
     <TextView
         android:id="@+id/recommend_Choiceness_Interest_ListItem_Title"
         android:text="产品/方案名称"
