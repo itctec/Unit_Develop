@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Unit_Android</string>
 
-    <string-array name="unit_title_array">
+    <string-array name="array_unit_title">
         <item>Glide</item>
         <item>RecyclerView</item>
         <item>StatusBar</item>
@@ -10,7 +10,7 @@
         <item>动态权限获取</item>
     </string-array>
 
-    <string-array name="permission_title_array">
+    <string-array name="array_permission_title">
         <item>读SD卡</item>
         <item>写SD卡</item>
         <item>读短信</item>
@@ -35,6 +35,65 @@
         <item>写通讯录</item>
         <item>读通讯录</item>
         <item>获取账号</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_action_title">
+        <item>活动1名称</item>
+        <item>活动2名称</item>
+        <item>活动3名称</item>
+        <item>活动4名称</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_action_publicitytext">
+        <item>活动宣传语1</item>
+        <item>活动宣传语2</item>
+        <item>活动宣传语3</item>
+        <item>活动宣传语4</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_action_datetime">
+        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
+        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
+        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
+        <item>XXXX年XX月XX日 XX:XX - XXXX年XX月XX日 XX:XX</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_action_site">
+        <item>活动地点1</item>
+        <item>活动地点2</item>
+        <item>活动地点3</item>
+        <item>活动地点4</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_action_summary">
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>活动描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_interest_title">
+        <item>产品/方案1名称</item>
+        <item>产品/方案2名称</item>
+        <item>产品/方案3名称</item>
+        <item>产品/方案4名称</item>
+        <item>产品/方案N名称</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_interest_summary">
+        <item>产品/方案描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>产品/方案描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>产品/方案描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>产品/方案描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+        <item>产品/方案描述:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</item>
+    </string-array>
+
+    <string-array name="array_recyclerview_interest_supportnum">
+        <item>2785</item>
+        <item>30491</item>
+        <item>65535</item>
+        <item>7184</item>
+        <item>84256</item>
     </string-array>
 
 </resources>
