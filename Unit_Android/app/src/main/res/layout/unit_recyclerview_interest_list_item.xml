@@ -12,7 +12,8 @@
         app:layout_constraintGuide_percent="0.3333" />
     <ImageView
         android:id="@+id/recommend_Choiceness_Interest_ListItem_Image"
-        android:background="@drawable/picture_place_image"
+        android:src="@drawable/picture_place_image"
+        android:scaleType="centerCrop"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="10dp"
@@ -26,7 +27,7 @@
         android:id="@+id/recommend_Choiceness_Interest_ListItem_Title"
         android:text="产品/方案名称"
         android:textSize="@dimen/content_item_title_text_size"
-        android:maxLength="@dimen/content_item_title_text_max_length_large"
+        android:maxLength="@dimen/content_item_title_text_twoslashthree_max_length"
         android:textColor="@color/content_common_item_title_text_color_dark"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -36,9 +37,9 @@
         app:layout_constraintRight_toRightOf="parent"/>
     <TextView
         android:id="@+id/recommend_Choiceness_Interest_ListItem_Summary"
-        android:text="产品方案描述"
+        android:text="产品方/案描述"
         android:textSize="@dimen/content_item_summary_one_text_size"
-        android:maxLength="@dimen/content_item_summary_text_max_length_huge_more"
+        android:maxLength="@dimen/content_item_summary_text_twoslashththree_moreline_max_length"
         android:textColor="@color/content_common_item_summary_text_color_dark"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -51,7 +52,7 @@
         android:id="@+id/recommend_Choiceness_Interest_ListItem_SupportNum"
         android:text=" 支持票数"
         android:textSize="@dimen/content_item_summary_two_text_size"
-        android:maxLength="@dimen/content_item_summary_text_max_length_short"
+        android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
         android:textColor="@color/content_common_item_summary_text_color_dark"
         android:drawableLeft="@drawable/support_smile_icon"
         android:layout_width="wrap_content"

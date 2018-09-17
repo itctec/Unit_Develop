@@ -91,9 +91,9 @@
 
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_One_Title"
-            android:text="消遣欢旅"
+            android:text="方案分类1"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_sort_item_title_text_max_length"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_solution_sort_item_one_title_text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -102,9 +102,9 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_One_Summary"
-            android:text="进入查看更多"
+            android:text="方案分类1描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_sort_item_summary_text_max_length"
+            android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,7 +113,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_One_Left_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -126,7 +127,8 @@
             app:layout_constraintRight_toLeftOf="@+id/recommend_Choiceness_Solution_Sort_One_Right_Image"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_One_Right_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -150,9 +152,9 @@
 
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Two_Title"
-            android:text="健康构筑"
+            android:text="方案分类2"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_sort_item_title_text_max_length"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_solution_sort_item_two_title_text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -161,9 +163,9 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Two_Summary"
-            android:text="构筑健康生活方案"
+            android:text="方案分类2描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_sort_item_summary_text_max_length"
+            android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -172,7 +174,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Two_Left_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -185,7 +188,8 @@
             app:layout_constraintRight_toLeftOf="@+id/recommend_Choiceness_Solution_Sort_Two_Right_Image"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Two_Right_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -209,9 +213,9 @@
 
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Three_Title"
-            android:text="牛人进化"
+            android:text="方案分类3"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_sort_item_title_text_max_length"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_solution_sort_item_three_title_text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -220,9 +224,9 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Three_Summary"
-            android:text="多维度塑造牛人"
+            android:text="方案分类3描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_sort_item_summary_text_max_length"
+            android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -231,7 +235,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Three_Left_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -244,7 +249,8 @@
             app:layout_constraintRight_toLeftOf="@+id/recommend_Choiceness_Solution_Sort_Three_Right_Image"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Three_Right_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -268,9 +274,9 @@
 
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Four_Title"
-            android:text="探寻真我"
+            android:text="方案分类4"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_sort_item_title_text_max_length"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_solution_sort_item_four_title_text_color"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -279,9 +285,9 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Four_Summary"
-            android:text="创造价值 实现自我"
+            android:text="方案分类4描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_sort_item_summary_text_max_length"
+            android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -290,7 +296,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Four_Left_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -303,7 +310,8 @@
             app:layout_constraintRight_toLeftOf="@+id/recommend_Choiceness_Solution_Sort_Four_Right_Image"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Sort_Four_Right_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -404,7 +412,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Subject_One_Title"
             android:text="专题方案名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_normal"
+            android:maxLength="@dimen/content_item_title_text_twoslashthree_max_length"
             android:textColor="@color/content_common_item_title_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -416,7 +424,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Subject_One_Summary"
             android:text="专题方案描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_normal"
+            android:maxLength="@dimen/content_item_summary_text_twoslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -435,7 +443,8 @@
         app:layout_constraintRight_toRightOf="parent">
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_One_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="@dimen/content_common_item_divider_line_height"
@@ -448,7 +457,7 @@
             android:id="@+id/recommend_Choiceness_Solution_One_Title"
             android:text="方案1名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -460,7 +469,7 @@
             android:id="@+id/recommend_Choiceness_Solution_One_Summary"
             android:text="方案1描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -479,7 +488,8 @@
         app:layout_constraintRight_toLeftOf="@id/recommend_Choiceness_Solution_Vertical_Guideline_One">
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Two_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/content_common_item_divider_line_height"
@@ -493,7 +503,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Two_Title"
             android:text="方案2名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -505,7 +515,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Two_Summary"
             android:text="方案2描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -524,7 +534,8 @@
         app:layout_constraintRight_toLeftOf="@id/recommend_Choiceness_Solution_Vertical_Guideline_Two">
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Three_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/content_common_item_divider_line_height"
@@ -539,7 +550,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Three_Title"
             android:text="方案3名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -551,7 +562,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Three_Summary"
             android:text="方案3描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -570,7 +581,8 @@
         app:layout_constraintRight_toRightOf="parent">
         <ImageView
             android:id="@+id/recommend_Choiceness_Solution_Four_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/content_common_item_divider_line_height"
@@ -584,7 +596,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Four_Title"
             android:text="方案4名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -596,7 +608,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Four_Summary"
             android:text="方案4描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -617,7 +629,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Simple_One_Title"
             android:text="方案5名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -629,7 +641,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Simple_One_Summary"
             android:text="方案5描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -650,7 +662,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Simple_Two_Title"
             android:text="方案6名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -662,7 +674,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Simple_Two_Summary"
             android:text="方案6描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -683,7 +695,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Simple_Three_Title"
             android:text="方案7名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -695,7 +707,7 @@
             android:id="@+id/recommend_Choiceness_Solution_Simple_Three_Summary"
             android:text="方案7描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashthree_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

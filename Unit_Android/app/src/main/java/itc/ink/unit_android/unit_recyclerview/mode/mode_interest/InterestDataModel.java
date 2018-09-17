@@ -5,7 +5,8 @@ package itc.ink.unit_android.unit_recyclerview.mode.mode_interest;
  */
 
 public class InterestDataModel {
-    public String interestTitle;
-    public String interestSummary;
-    public String interestSupportNum;
+    public String interestTitle = "产品/方案名称";
+    public String interestSummary = "产品/方案描述";
+    public String interestSupportNum = "支持票数";
+    public String interestImageUrl = "";
 }

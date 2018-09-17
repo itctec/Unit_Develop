@@ -128,7 +128,7 @@ public class MainActivity extends Activity {
                 }
 
                 DynamicPermission dynamicPermission = new DynamicPermission();
-                boolean requestedAllPermissions = dynamicPermission.serviceInterface.requestPermissions(MainActivity.this, PERMISSION_REQUEST_CODE, permissionsNeeded);
+                boolean requestedAllPermissions = dynamicPermission.outService.requestPermissions(MainActivity.this, PERMISSION_REQUEST_CODE, permissionsNeeded);
                 if (requestedAllPermissions) {
                     Toast.makeText(MainActivity.this,"已拥有该权限，无需重新获取",Toast.LENGTH_LONG).show();
                 }

@@ -56,7 +56,7 @@ public class MainActivity extends Activity {
 
         permissionsNeeded = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE};
         dynamicPermission = new DynamicPermission();
-        obtainAllPermissionSuccess = dynamicPermission.serviceInterface.requestPermissions(MainActivity.this, PERMISSION_REQUEST_CODE, permissionsNeeded);
+        obtainAllPermissionSuccess = dynamicPermission.outService.requestPermissions(MainActivity.this, PERMISSION_REQUEST_CODE, permissionsNeeded);
         if (obtainAllPermissionSuccess) {
             Toast.makeText(MainActivity.this,"本页面已无权限需求限制！",Toast.LENGTH_LONG).show();
         }
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        if (dynamicPermission.serviceInterface.hasPermission(MainActivity.this,Manifest.permission.READ_EXTERNAL_STORAGE)) {
+        if (dynamicPermission.outService.hasPermission(MainActivity.this,Manifest.permission.READ_EXTERNAL_STORAGE)) {
             deniedPermissionList.remove(Manifest.permission.READ_EXTERNAL_STORAGE);
         }
     }
@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
     public void loadSDCardImage(View view) {
         if (obtainAllPermissionSuccess == false && deniedPermissionList.contains(Manifest.permission.READ_EXTERNAL_STORAGE)) {
             String dialogMsg="获取本地图片需要授予App访问SD卡的权限，请前往设置授予相应权限";
-            dynamicPermission.serviceInterface.showMissingPermissionDialog(MainActivity.this,dialogMsg);
+            dynamicPermission.outService.showMissingPermissionDialog(MainActivity.this,dialogMsg);
         } else {
             File imageFile = new File(Environment.getExternalStorageDirectory() + "/local_sdcard_bg.png");
             Glide.with(MainActivity.this).load(imageFile).into(glideImageView);

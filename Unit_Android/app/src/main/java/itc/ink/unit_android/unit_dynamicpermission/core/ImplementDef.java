@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Created by yangwenjiang on 2018/9/13.
  */
 
-public class ImplementDef implements DynamicPermission.ServiceInterface {
+public class ImplementDef implements DynamicPermission.OutService {
     private static final String PACKAGE_URL_SCHEME = "package:";
 
     @Override

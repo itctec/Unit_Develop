@@ -154,7 +154,7 @@
             android:id="@+id/recommend_Choiceness_Product_Level_A_Title"
             android:text="A级产品名称"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -165,7 +165,7 @@
             android:id="@+id/recommend_Choiceness_Product_Level_A_Summary"
             android:text="产品描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -175,7 +175,8 @@
             app:layout_constraintRight_toRightOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Level_A_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="5dp"
@@ -197,7 +198,7 @@
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_One_Title"
             android:text="产品专题类别1"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -208,7 +209,7 @@
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_One_Summary"
             android:text="产品专题描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -218,7 +219,8 @@
             app:layout_constraintRight_toRightOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_One_Left_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -231,7 +233,8 @@
             app:layout_constraintRight_toLeftOf="@id/recommend_Choiceness_Product_Subject_Sort_One_Right_Image"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_One_Right_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -256,7 +259,7 @@
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_Two_Title"
             android:text="产品专题类别2"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -267,7 +270,7 @@
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_Two_Summary"
             android:text="产品专题描述"
             android:textSize="@dimen/content_item_summary_two_text_size"
-            android:maxLength="@dimen/content_item_summary_text_max_length_short"
+            android:maxLength="@dimen/content_item_summary_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_summary_text_color_dark"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -277,7 +280,8 @@
             app:layout_constraintRight_toRightOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_Two_Left_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -290,7 +294,8 @@
             app:layout_constraintRight_toLeftOf="@id/recommend_Choiceness_Product_Subject_Sort_Two_Right_Image"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Subject_Sort_Two_Right_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
@@ -311,12 +316,14 @@
         app:layout_constraintBottom_toBottomOf="@id/recommend_Choiceness_Product_Horizontal_Guideline_Four"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/recommend_Choiceness_Product_Vertical_Guideline_Two">
-        <ImageView
-            android:id="@+id/recommend_Choiceness_Product_Subject_Banner_One_Image"
+        <com.youth.banner.Banner
+            android:id="@+id/recommend_Choiceness_Product_Subject_Banner_One_Banner"
             android:background="@drawable/picture_place_image"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="5dp"
+            app:image_scale_type="center_crop"
+            app:delay_time="3500"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -325,7 +332,7 @@
             android:id="@+id/recommend_Choiceness_Product_Subject_Banner_One_Title"
             android:text="产品专题Banner1"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_normal"
+            android:maxLength="@dimen/content_item_title_text_oneslashtwo_max_length"
             android:textColor="@color/content_common_item_title_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -343,12 +350,14 @@
         app:layout_constraintBottom_toBottomOf="@id/recommend_Choiceness_Product_Horizontal_Guideline_Four"
         app:layout_constraintLeft_toRightOf="@id/recommend_Choiceness_Product_Vertical_Guideline_Two"
         app:layout_constraintRight_toRightOf="parent">
-        <ImageView
-            android:id="@+id/recommend_Choiceness_Product_Subject_Banner_Two_Image"
+        <com.youth.banner.Banner
+            android:id="@+id/recommend_Choiceness_Product_Subject_Banner_Two_Banner"
             android:background="@drawable/picture_place_image"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="5dp"
+            app:image_scale_type="center_crop"
+            app:delay_time="4000"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -357,7 +366,7 @@
             android:id="@+id/recommend_Choiceness_Product_Subject_Banner_Two_Title"
             android:text="产品专题Banner2"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_normal"
+            android:maxLength="@dimen/content_item_title_text_oneslashtwo_max_length"
             android:textColor="@color/content_common_item_title_text_color_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -379,7 +388,7 @@
             android:id="@+id/recommend_Choiceness_Product_Level_B_One_Title"
             android:text="B级产品名称1"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -389,7 +398,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Level_B_One_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="5dp"
@@ -411,7 +421,7 @@
             android:id="@+id/recommend_Choiceness_Product_Level_B_Two_Title"
             android:text="B级产品名称2"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -421,7 +431,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Level_B_Two_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="5dp"
@@ -443,7 +454,7 @@
             android:id="@+id/recommend_Choiceness_Product_Level_B_Three_Title"
             android:text="B级产品名称3"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -453,7 +464,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Level_B_Three_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="5dp"
@@ -475,7 +487,7 @@
             android:id="@+id/recommend_Choiceness_Product_Level_B_Four_Title"
             android:text="B级产品名称4"
             android:textSize="@dimen/content_item_title_text_size"
-            android:maxLength="@dimen/content_item_title_text_max_length_short"
+            android:maxLength="@dimen/content_item_title_text_oneslashfour_max_length"
             android:textColor="@color/content_common_item_title_text_color_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -485,7 +497,8 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
         <ImageView
             android:id="@+id/recommend_Choiceness_Product_Level_B_Four_Image"
-            android:background="@drawable/picture_place_image"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_margin="5dp"

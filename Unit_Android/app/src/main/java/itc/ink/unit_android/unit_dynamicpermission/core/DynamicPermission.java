@@ -10,7 +10,7 @@ import android.content.Context;
 public class DynamicPermission {
     public static final int IMPLEMENT_DEF = 0X01;
 
-    public ServiceInterface serviceInterface = null;
+    public OutService outService = null;
 
     public DynamicPermission() {
         setServiceInterfaceImplement(IMPLEMENT_DEF);
@@ -23,14 +23,14 @@ public class DynamicPermission {
     public void setServiceInterfaceImplement(int mImplementCode) {
         switch (mImplementCode) {
             case IMPLEMENT_DEF:
-                serviceInterface = new ImplementDef();
+                outService = new ImplementDef();
                 break;
             default:
-                serviceInterface = new ImplementDef();
+                outService = new ImplementDef();
         }
     }
 
-    public interface ServiceInterface {
+    public interface OutService {
         /**
          * 检查是否有权限
          */

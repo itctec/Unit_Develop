@@ -4,21 +4,27 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="picture_place_image_bg">#22AAAAAA</color>
+
     <color name="activity_layout_background">#FFFFFF</color>
     <color name="main_list_btn_color_normal">#DDDDDD</color>
     <color name="main_list_btn_color_pressed">#AAAAAA</color>
 
-    <color name="header_divider_title_text_color">#555555</color>
-    <color name="header_divider_summary_text_color">#555555</color>
+    <color name="banner_indicator_selected_color">#FFFFFF</color>
+    <color name="banner_indicator_unselected_color">#77FFFFFF</color>
+
+    <color name="header_divider_title_text_color">#333333</color>
+    <color name="header_divider_summary_text_color">#333333</color>
     <color name="content_solution_sort_item_one_title_text_color">#FFDB47</color>
     <color name="content_solution_sort_item_two_title_text_color">#00BAAD</color>
     <color name="content_solution_sort_item_three_title_text_color">#FF5733</color>
     <color name="content_solution_sort_item_four_title_text_color">#2A82E4</color>
 
     <color name="content_common_item_title_text_color_light">#FFFFFF</color>
-    <color name="content_common_item_title_text_color_dark">#555555</color>
+    <color name="content_common_item_title_text_color_dark">#333333</color>
+    <color name="content_common_item_title_second_text_color_dark">#555555</color>
     <color name="content_common_item_summary_text_color_light">#FFFFFF</color>
-    <color name="content_common_item_summary_text_color_dark">#AAAAAA</color>
+    <color name="content_common_item_summary_text_color_dark">#888888</color>
 
     <color name="content_common_item_divider_line_color">#DDDDDD</color>
 </resources>

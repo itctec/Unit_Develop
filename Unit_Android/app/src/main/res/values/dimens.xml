@@ -10,17 +10,18 @@
     <dimen name="content_common_item_divider_line_width">1px</dimen>
     <dimen name="content_common_item_divider_line_height">1px</dimen>
 
-    <item name="content_sort_item_title_text_max_length" type="dimen" format="integer">7</item>
-    <item name="content_sort_item_summary_text_max_length" type="dimen" format="integer">10</item>
+    <item name="content_item_title_text_oneslashfour_max_length" type="dimen" format="integer">7</item>
+    <item name="content_item_title_text_oneslashthree_max_length" type="dimen" format="integer">10</item>
+    <item name="content_item_title_text_oneslashtwo_max_length" type="dimen" format="integer">12</item>
+    <item name="content_item_title_text_twoslashthree_max_length" type="dimen" format="integer">16</item>
+    <item name="content_item_title_text_oneslashone_max_length" type="dimen" format="integer">24</item>
 
-    <item name="content_item_title_text_max_length_short" type="dimen" format="integer">7</item>
-    <item name="content_item_title_text_max_length_normal" type="dimen" format="integer">13</item>
-    <item name="content_item_title_text_max_length_large" type="dimen" format="integer">22</item>
-    <item name="content_item_summary_text_max_length_short" type="dimen" format="integer">10</item>
-    <item name="content_item_summary_text_max_length_normal" type="dimen" format="integer">22</item>
-    <item name="content_item_summary_text_max_length_large" type="dimen" format="integer">26</item>
-    <item name="content_item_summary_text_max_length_large_more" type="dimen" format="integer">31</item>
-    <item name="content_item_summary_text_max_length_huge" type="dimen" format="integer">60</item>
-    <item name="content_item_summary_text_max_length_huge_more" type="dimen" format="integer">90</item>
+    <item name="content_item_summary_text_oneslashfour_max_length" type="dimen" format="integer">8</item>
+    <item name="content_item_summary_text_oneslashthree_max_length" type="dimen" format="integer">11</item>
+    <item name="content_item_summary_text_oneslashtwo_max_length" type="dimen" format="integer">16</item>
+    <item name="content_item_summary_text_twoslashthree_short_max_length" type="dimen" format="integer">18</item>
+    <item name="content_item_summary_text_twoslashthree_max_length" type="dimen" format="integer">22</item>
+    <item name="content_item_summary_text_oneslashthone_max_length" type="dimen" format="integer">32</item>
+    <item name="content_item_summary_text_twoslashththree_moreline_max_length" type="dimen" format="integer">45</item>
 
 </resources>
