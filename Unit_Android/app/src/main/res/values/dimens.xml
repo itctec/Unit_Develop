@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="top_navigation_bar_item_text_text_size">15dp</dimen>
+    <dimen name="top_navigation_bar_indicator_line_height">4px</dimen>
+    <dimen name="bottom_navigation_bar_item_text_text_size">12dp</dimen>
+
     <dimen name="header_divider_title_text_size">15dp</dimen>
     <dimen name="header_divider_summary_text_size">12dp</dimen>
 
@@ -9,6 +13,11 @@
 
     <dimen name="content_common_item_divider_line_width">1px</dimen>
     <dimen name="content_common_item_divider_line_height">1px</dimen>
+
+    <dimen name="top_navigation_bar_height">45dp</dimen>
+    <dimen name="top_second_navigation_bar_height">35dp</dimen>
+
+    <dimen name="bottom_navigation_bar_height">55dp</dimen>
 
     <item name="content_item_title_text_oneslashfour_max_length" type="dimen" format="integer">7</item>
     <item name="content_item_title_text_oneslashthree_max_length" type="dimen" format="integer">10</item>

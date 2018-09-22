@@ -1,36 +1,34 @@
 package itc.ink.unit_android.unit_recyclerview.mode;
 
-import android.app.Activity;
 import android.content.Context;
 
-import itc.ink.unit_android.unit_dynamicpermission.core.ImplementDef;
-import itc.ink.unit_android.unit_recyclerview.mode.implement.AssertDataLoader;
+import itc.ink.unit_android.unit_recyclerview.mode.implement.NetResDataLoader;
+
 
 /**
  * Created by yangwenjiang on 2018/9/16.
  */
 
 public class DataLoad {
-
-    public static final int IMPLEMENT_DEF = 0X01;
+    public static final int IMPLEMENT_NET_RESOURCE = 0X01;
 
     public OutService outService = null;
 
-    public DataLoad() {
-        setServiceInterfaceImplement(IMPLEMENT_DEF);
+    public DataLoad(Context mContext) {
+        setServiceInterfaceImplement(mContext, IMPLEMENT_NET_RESOURCE);
     }
 
-    public DataLoad(int mImplementCode) {
-        setServiceInterfaceImplement(mImplementCode);
+    public DataLoad(Context mContext, int mImplementCode) {
+        setServiceInterfaceImplement(mContext, mImplementCode);
     }
 
-    public void setServiceInterfaceImplement(int mImplementCode) {
+    private void setServiceInterfaceImplement(Context mContext, int mImplementCode) {
         switch (mImplementCode) {
-            case IMPLEMENT_DEF:
-                outService = new AssertDataLoader();
+            case IMPLEMENT_NET_RESOURCE:
+                outService = new NetResDataLoader(mContext);
                 break;
             default:
-                outService = new AssertDataLoader();
+                outService = new NetResDataLoader(mContext);
         }
     }
 

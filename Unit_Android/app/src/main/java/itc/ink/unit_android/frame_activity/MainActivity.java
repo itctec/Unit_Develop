@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.tencent.bugly.Bugly;
+
 import java.util.ArrayList;
 
 import itc.ink.unit_android.R;

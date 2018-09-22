@@ -1,6 +1,7 @@
 package itc.ink.unit_android.unit_recyclerview.adapter;
 
 import android.content.Context;
+import android.media.Image;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -44,14 +45,20 @@ public class MainWrapperAdapter extends RecyclerView.Adapter<MainWrapperAdapter.
     private InterestDataAdapter mInterestDataAdapter;
     private DelegateInterface mDelegateInterface;
 
-    public MainWrapperAdapter(Context mContext, Object mBannerData, Object mSolutionData, Object mActionSubjectData, Object mActionListData, Object mProductData, Object mInterestListData) {
+    public MainWrapperAdapter(Context mContext,
+                              ArrayList<String> mBannerData,
+                              ArrayList<SolutionDataMode> mSolutionData,
+                              ArrayList<ActionSubjectDataMode> mActionSubjectData,
+                              ArrayList<ActionListDataModel> mActionListData,
+                              ArrayList<ProductDataMode> mProductData,
+                              ArrayList<InterestDataModel> mInterestListData) {
         this.mContext = mContext;
-        this.mBannerData = (ArrayList<String>) mBannerData;
-        this.mSolutionData = (ArrayList<SolutionDataMode>) mSolutionData;
-        this.mActionSubjectData=(ArrayList<ActionSubjectDataMode>)mActionSubjectData;
-        this.mActionDataAdapter = new ActionDataAdapter(mContext, (ArrayList<ActionListDataModel>) mActionListData);
-        this.mProductData=(ArrayList<ProductDataMode>) mProductData;
-        this.mInterestDataAdapter = new InterestDataAdapter(mContext, (ArrayList<InterestDataModel>) mInterestListData);
+        this.mBannerData = mBannerData;
+        this.mSolutionData = mSolutionData;
+        this.mActionSubjectData = mActionSubjectData;
+        this.mActionDataAdapter = new ActionDataAdapter(mContext, mActionListData);
+        this.mProductData = mProductData;
+        this.mInterestDataAdapter = new InterestDataAdapter(mContext, mInterestListData);
     }
 
     @Override
@@ -166,7 +173,7 @@ public class MainWrapperAdapter extends RecyclerView.Adapter<MainWrapperAdapter.
         public ImageView solutionSortFourRightImageImageView;
 
         public ConstraintLayout solutionSubjectOneLayout;
-        public VideoView solutionSubjectOneVideoVideoView;
+        public ImageView solutionSubjectOneGifImageView;
         public TextView solutionSubjectOneTitleTextView;
         public TextView solutionSubjectOneSummaryTextView;
 
@@ -205,7 +212,7 @@ public class MainWrapperAdapter extends RecyclerView.Adapter<MainWrapperAdapter.
         //Action Widget
         public TextView actionRecommendTopTextView;
         public ConstraintLayout actionSubjectOneLayout;
-        public VideoView actionSubjectOneVideoVideoView;
+        public ImageView actionSubjectOneGifImageView;
         public TextView actionSubjectOneTitleTextView;
         public TextView actionSubjectOneSummaryTextView;
 
@@ -288,7 +295,7 @@ public class MainWrapperAdapter extends RecyclerView.Adapter<MainWrapperAdapter.
                 solutionSortFourRightImageImageView = view.findViewById(R.id.recommend_Choiceness_Solution_Sort_Four_Right_Image);
 
                 solutionSubjectOneLayout = view.findViewById(R.id.recommend_Choiceness_Solution_Subject_One_Layout);
-                solutionSubjectOneVideoVideoView = view.findViewById(R.id.recommend_Choiceness_Solution_Subject_One_Video);
+                solutionSubjectOneGifImageView = view.findViewById(R.id.recommend_Choiceness_Solution_Subject_One_Gif);
                 solutionSubjectOneTitleTextView = view.findViewById(R.id.recommend_Choiceness_Solution_Subject_One_Title);
                 solutionSubjectOneSummaryTextView = view.findViewById(R.id.recommend_Choiceness_Solution_Subject_One_Summary);
 
@@ -326,7 +333,7 @@ public class MainWrapperAdapter extends RecyclerView.Adapter<MainWrapperAdapter.
             } else if (item_type == ITEM_TYPE.ACTION_SUBJECT) {
                 actionRecommendTopTextView = view.findViewById(R.id.recommend_Choiceness_Action_Header_Divider_RecommendTop);
                 actionSubjectOneLayout = view.findViewById(R.id.recommend_Choiceness_Action_Subject_One_Layout);
-                actionSubjectOneVideoVideoView = view.findViewById(R.id.recommend_Choiceness_Action_Subject_One_Video);
+                actionSubjectOneGifImageView = view.findViewById(R.id.recommend_Choiceness_Action_Subject_One_Gif);
                 actionSubjectOneTitleTextView = view.findViewById(R.id.recommend_Choiceness_Action_Subject_One_Title);
                 actionSubjectOneSummaryTextView = view.findViewById(R.id.recommend_Choiceness_Action_Subject_One_Summary);
             } else if (item_type == ITEM_TYPE.PRODUCT) {

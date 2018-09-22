@@ -43,14 +43,32 @@ public class UnitRecyclerViewAdapter extends RecyclerView.Adapter<UnitRecyclerVi
                 Intent intent = new Intent();
 
                 switch(mData.get(position)){
+                    case "Dynamic Permission Get":
+                        intent.setClass(mContext, itc.ink.unit_android.unit_dynamicpermission.activity.MainActivity.class);
+                        break;
+                    case "NavigationBar":
+                        intent.setClass(mContext, itc.ink.unit_android.unit_navigatoinbar.activity.MainActivity.class);
+                        break;
                     case "Glide":
                         intent.setClass(mContext, MainActivity.class);
                         break;
                     case "RecyclerView":
                         intent.setClass(mContext, itc.ink.unit_android.unit_recyclerview.activity.MainActivity.class);
                         break;
-                    case "动态权限获取":
-                        intent.setClass(mContext, itc.ink.unit_android.unit_dynamicpermission.activity.MainActivity.class);
+                    case "ViewPager":
+                        intent.setClass(mContext, itc.ink.unit_android.unit_viewpager.activity.MainActivity.class);
+                        break;
+                    case "Fragment":
+                        intent.setClass(mContext, itc.ink.unit_android.unit_fragment.activity.MainActivity.class);
+                        break;
+                    case "AliPay":
+                        intent.setClass(mContext, itc.ink.unit_android.unit_alipay.activity.MainActivity.class);
+                        break;
+                    case "App Version Update":
+                        intent.setClass(mContext, itc.ink.unit_android.unit_selfupdate.activity.MainActivity.class);
+                        break;
+                    case "JSON":
+                        intent.setClass(mContext, itc.ink.unit_android.unit_json.activity.MainActivity.class);
                         break;
                 }
 

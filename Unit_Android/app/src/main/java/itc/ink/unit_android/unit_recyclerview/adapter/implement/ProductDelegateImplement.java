@@ -32,61 +32,61 @@ public class ProductDelegateImplement implements MainWrapperAdapter.DelegateInte
 
         mHolder.productRecommendTopTextView.setOnClickListener(new ProductRecommendTopTextViewClickListener());
         mHolder.productLevelALayout.setOnClickListener(new ProductLevelALayoutClickListener());
-        mHolder.productLevelATitleTextView.setText(productData.get(0).productTitle);
-        mHolder.productLevelASummaryTextView.setText(productData.get(0).productSummary);
-        Glide.with(mContext).load(productData.get(0).productImageUrl).into(mHolder.productLevelAImageImageView);
+        mHolder.productLevelATitleTextView.setText(productData.get(0).getTitle());
+        mHolder.productLevelASummaryTextView.setText(productData.get(0).getSummary());
+        Glide.with(mContext).load(productData.get(0).getImageurl()).into(mHolder.productLevelAImageImageView);
 
         mHolder.productSubjectSortOneLayout.setOnClickListener(new ProductSubjectSortOneLayoutClickListener());
-        mHolder.productSubjectSortOneTitleTextView.setText(productData.get(1).productTitle);
-        mHolder.productSubjectSortOneSummaryTextView.setText(productData.get(1).productSummary);
-        Glide.with(mContext).load(productData.get(1).productImageLeftUrl).into(mHolder.productSubjectSortOneLeftImageImageView);
-        Glide.with(mContext).load(productData.get(1).productImageRightUrl).into(mHolder.productSubjectSortOneRightImageImageView);
+        mHolder.productSubjectSortOneTitleTextView.setText(productData.get(1).getTitle());
+        mHolder.productSubjectSortOneSummaryTextView.setText(productData.get(1).getSummary());
+        Glide.with(mContext).load(productData.get(1).getImageurl_left()).into(mHolder.productSubjectSortOneLeftImageImageView);
+        Glide.with(mContext).load(productData.get(1).getImageurl_right()).into(mHolder.productSubjectSortOneRightImageImageView);
 
         mHolder.productSubjectSortTwoLayout.setOnClickListener(new ProductSubjectSortTwoLayoutClickListener());
-        mHolder.productSubjectSortTwoTitleTextView.setText(productData.get(2).productTitle);
-        mHolder.productSubjectSortTwoSummaryTextView.setText(productData.get(2).productSummary);
-        Glide.with(mContext).load(productData.get(2).productImageLeftUrl).into(mHolder.productSubjectSortTwoLeftImageImageView);
-        Glide.with(mContext).load(productData.get(2).productImageRightUrl).into(mHolder.productSubjectSortTwoRightImageImageView);
+        mHolder.productSubjectSortTwoTitleTextView.setText(productData.get(2).getTitle());
+        mHolder.productSubjectSortTwoSummaryTextView.setText(productData.get(2).getSummary());
+        Glide.with(mContext).load(productData.get(2).getImageurl_left()).into(mHolder.productSubjectSortTwoLeftImageImageView);
+        Glide.with(mContext).load(productData.get(2).getImageurl_right()).into(mHolder.productSubjectSortTwoRightImageImageView);
 
         mHolder.productSubjectBannerOneLayout.setOnClickListener(new ProductSubjectBannerOneLayoutClickListener());
-        mHolder.productSubjectBannerOneTitleTextView.setText(productData.get(3).productTitle);
+        mHolder.productSubjectBannerOneTitleTextView.setText(productData.get(3).getTitle());
         mHolder.productSubjectBannerOneBanner.setBannerStyle(BannerConfig.NOT_INDICATOR);
         mHolder.productSubjectBannerOneBanner.setImageLoader(new MyLoader());
         String[] productSubjectBannerOneImageArray=new String[2];
-        productSubjectBannerOneImageArray[0]=productData.get(3).productImageLeftUrl;
-        productSubjectBannerOneImageArray[1]=productData.get(3).productImageRightUrl;
+        productSubjectBannerOneImageArray[0]=productData.get(3).getImageurl_left();
+        productSubjectBannerOneImageArray[1]=productData.get(3).getImageurl_right();
         mHolder.productSubjectBannerOneBanner.setImages(Arrays.asList(productSubjectBannerOneImageArray));
         mHolder.productSubjectBannerOneBanner.setBannerAnimation(Transformer.Default);
         mHolder.productSubjectBannerOneBanner.isAutoPlay(true).start();
         mHolder.productSubjectBannerOneBanner.setOnBannerListener(new ProductSubjectBannerOneBannerBannerClickListener());
 
         mHolder.productSubjectBannerTwoLayout.setOnClickListener(new ProductSubjectBannerTwoLayoutClickListener());
-        mHolder.productSubjectBannerTwoTitleTextView.setText(productData.get(4).productTitle);
+        mHolder.productSubjectBannerTwoTitleTextView.setText(productData.get(4).getTitle());
         mHolder.productSubjectBannerTwoBanner.setBannerStyle(BannerConfig.NOT_INDICATOR);
         mHolder.productSubjectBannerTwoBanner.setImageLoader(new MyLoader());
         String[] productSubjectBannerTwoImageArray=new String[2];
-        productSubjectBannerTwoImageArray[0]=productData.get(4).productImageLeftUrl;
-        productSubjectBannerTwoImageArray[1]=productData.get(4).productImageRightUrl;
+        productSubjectBannerTwoImageArray[0]=productData.get(4).getImageurl_left();
+        productSubjectBannerTwoImageArray[1]=productData.get(4).getImageurl_right();
         mHolder.productSubjectBannerTwoBanner.setImages(Arrays.asList(productSubjectBannerTwoImageArray));
         mHolder.productSubjectBannerTwoBanner.setBannerAnimation(Transformer.Default);
         mHolder.productSubjectBannerTwoBanner.isAutoPlay(true).start();
         mHolder.productSubjectBannerTwoBanner.setOnBannerListener(new ProductSubjectBannerTwoBannerBannerClickListener());
 
         mHolder.productLevelBOneLayout.setOnClickListener(new ProductLevelBOneLayoutClickListener());
-        mHolder.productLevelBOneTitleTextView.setText(productData.get(5).productTitle);
-        Glide.with(mContext).load(productData.get(5).productImageUrl).into(mHolder.productLevelBOneImageImageView);
+        mHolder.productLevelBOneTitleTextView.setText(productData.get(5).getTitle());
+        Glide.with(mContext).load(productData.get(5).getImageurl()).into(mHolder.productLevelBOneImageImageView);
 
         mHolder.productLevelBTwoLayout.setOnClickListener(new ProductLevelBTwoLayoutClickListener());
-        mHolder.productLevelBTwoTitleTextView.setText(productData.get(6).productTitle);
-        Glide.with(mContext).load(productData.get(6).productImageUrl).into(mHolder.productLevelBTwoImageImageView);
+        mHolder.productLevelBTwoTitleTextView.setText(productData.get(6).getTitle());
+        Glide.with(mContext).load(productData.get(6).getImageurl()).into(mHolder.productLevelBTwoImageImageView);
 
         mHolder.productLevelBThreeLayout.setOnClickListener(new ProductLevelBThreeLayoutClickListener());
-        mHolder.productLevelBThreeTitleTextView.setText(productData.get(7).productTitle);
-        Glide.with(mContext).load(productData.get(7).productImageUrl).into(mHolder.productLevelBThreeImageImageView);
+        mHolder.productLevelBThreeTitleTextView.setText(productData.get(7).getTitle());
+        Glide.with(mContext).load(productData.get(7).getImageurl()).into(mHolder.productLevelBThreeImageImageView);
 
         mHolder.productLevelBFourLayout.setOnClickListener(new ProductLevelBFourLayoutClickListener());
-        mHolder.productLevelBFourTitleTextView.setText(productData.get(8).productTitle);
-        Glide.with(mContext).load(productData.get(8).productImageUrl).into(mHolder.productLevelBFourImageImageView);
+        mHolder.productLevelBFourTitleTextView.setText(productData.get(8).getTitle());
+        Glide.with(mContext).load(productData.get(8).getImageurl()).into(mHolder.productLevelBFourImageImageView);
     }
 
     class ProductRecommendTopTextViewClickListener implements View.OnClickListener{

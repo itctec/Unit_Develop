@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/activity_layout_background"
+    tools:context="itc.ink.unit_android.unit_fragment.activity.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/app_Fragment_Container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/app_Bottom_NavigationBar_Navigation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+    <include
+        android:id="@+id/app_Bottom_NavigationBar_Navigation"
+        layout="@layout/unit_navigationbar_bottom"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_navigation_bar_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

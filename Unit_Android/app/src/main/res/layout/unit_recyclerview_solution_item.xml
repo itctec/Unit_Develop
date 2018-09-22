@@ -398,8 +398,10 @@
         app:layout_constraintBottom_toBottomOf="@id/recommend_Choiceness_Solution_Horizontal_Guideline_Two"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/recommend_Choiceness_Solution_Vertical_Guideline_Two">
-        <VideoView
-            android:id="@+id/recommend_Choiceness_Solution_Subject_One_Video"
+        <ImageView
+            android:id="@+id/recommend_Choiceness_Solution_Subject_One_Gif"
+            android:src="@drawable/picture_place_image"
+            android:scaleType="centerCrop"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginBottom="@dimen/content_common_item_divider_line_height"
@@ -407,7 +409,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"/>
+            app:layout_constraintRight_toRightOf="parent" />
         <TextView
             android:id="@+id/recommend_Choiceness_Solution_Subject_One_Title"
             android:text="专题方案名称"

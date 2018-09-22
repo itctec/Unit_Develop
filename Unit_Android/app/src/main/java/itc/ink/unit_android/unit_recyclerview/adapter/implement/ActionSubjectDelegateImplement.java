@@ -5,6 +5,9 @@ import android.media.MediaPlayer;
 import android.view.View;
 import android.widget.Toast;
 import android.widget.VideoView;
+
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import itc.ink.unit_android.unit_recyclerview.adapter.MainWrapperAdapter;
 import itc.ink.unit_android.unit_recyclerview.mode.mode_action.ActionSubjectDataMode;
@@ -23,13 +26,9 @@ public class ActionSubjectDelegateImplement implements MainWrapperAdapter.Delega
 
         mHolder.actionRecommendTopTextView.setOnClickListener(new ActionRecommendTopTextViewClickListener());
         mHolder.actionSubjectOneLayout.setOnClickListener(new ActionSubjectOneLayoutClickListener());
-        mHolder.actionSubjectOneTitleTextView.setText(solutionData.get(0).actionSbujectTitle);
-        mHolder.actionSubjectOneSummaryTextView.setText(solutionData.get(0).actionSubjectSummary);
-        mHolder.actionSubjectOneVideoVideoView.setVideoPath(solutionData.get(0).actionSubjectVideoUrl);
-        mHolder.actionSubjectOneVideoVideoView.setOnCompletionListener(new ActionSubjectOneVideoVideoViewCompletionListener());
-        mHolder.actionSubjectOneVideoVideoView.requestFocus();
-        mHolder.actionSubjectOneVideoVideoView.setOnErrorListener(new ActionSubjectOneVideoVideoViewErrorListener(mHolder.actionSubjectOneVideoVideoView));
-        mHolder.actionSubjectOneVideoVideoView.start();
+        mHolder.actionSubjectOneTitleTextView.setText(solutionData.get(0).getTitle());
+        mHolder.actionSubjectOneSummaryTextView.setText(solutionData.get(0).getSummary());
+        Glide.with(mContext).load(solutionData.get(0).getGifurl()).into(mHolder.actionSubjectOneGifImageView);
     }
 
     class ActionRecommendTopTextViewClickListener implements View.OnClickListener{

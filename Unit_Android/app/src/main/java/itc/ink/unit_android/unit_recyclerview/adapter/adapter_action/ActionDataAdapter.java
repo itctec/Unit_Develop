@@ -40,18 +40,18 @@ public class ActionDataAdapter extends RecyclerView.Adapter<ActionDataAdapter.VH
     @Override
     public void onBindViewHolder(VH holder, final int position) {
         final ActionListDataModel actionDataItem = mData.get(position);
-        holder.actionTitleTextView.setText(actionDataItem.actionTitle);
-        holder.actionPublicityTextTextView.setText(actionDataItem.actionPublicityText);
-        holder.actionDatetimeTextView.setText(actionDataItem.actionDatetime);
-        holder.actionSiteTextView.setText(actionDataItem.actionSite);
-        holder.actionSummaryTextView.setText(actionDataItem.actionSummary);
+        holder.actionTitleTextView.setText(actionDataItem.getTitle());
+        holder.actionPublicityTextTextView.setText(actionDataItem.getPublicitytext());
+        holder.actionDatetimeTextView.setText(actionDataItem.getDatetime());
+        holder.actionSiteTextView.setText(actionDataItem.getSite());
+        holder.actionSummaryTextView.setText(actionDataItem.getSummary());
         RequestOptions options = new RequestOptions()
                 .diskCacheStrategy(DiskCacheStrategy.NONE);
-        Glide.with(mContext).load(actionDataItem.actionImageUrl).apply(options).into(holder.actionImageImageView);
+        Glide.with(mContext).load(actionDataItem.getImageurl()).apply(options).into(holder.actionImageImageView);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext,actionDataItem.actionTitle+"被点击",Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext,actionDataItem.getTitle()+"被点击",Toast.LENGTH_SHORT).show();
             }
         });
     }

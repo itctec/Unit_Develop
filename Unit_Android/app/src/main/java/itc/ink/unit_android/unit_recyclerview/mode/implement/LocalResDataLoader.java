@@ -16,7 +16,7 @@ import itc.ink.unit_android.unit_recyclerview.mode.mode_solution.SolutionDataMod
  * Created by yangwenjiang on 2018/9/16.
  */
 
-public class AssertDataLoader implements DataLoad.OutService{
+/*public class LocalResDataLoader implements DataLoad.OutService{
 
     @Override
     public Object loadBannerData(Context mContext) {
@@ -35,7 +35,7 @@ public class AssertDataLoader implements DataLoad.OutService{
         final int solutionItemNum=12;
         final int solutionImageUrlNum=4;
         final int solutionSortImageUrlNum=4;
-        final int solutionVideoUrlNum=1;
+        final int solutionGifUrlNum=1;
         ArrayList<SolutionDataMode> solutionDataArray = new ArrayList<>();
 
         String[] solutionTitles = mContext.getResources().getStringArray(R.array.array_recyclerview_solution_title);
@@ -43,7 +43,7 @@ public class AssertDataLoader implements DataLoad.OutService{
         String[] solutionImageUrls = mContext.getResources().getStringArray(R.array.array_recyclerview_solution_imageurl);
         String[] solutionImageLeftUrls = mContext.getResources().getStringArray(R.array.array_recyclerview_solution_imageurl_left);
         String[] solutionImageRightUrls = mContext.getResources().getStringArray(R.array.array_recyclerview_solution_imageurl_right);
-        String[] solutionVideoUrls = mContext.getResources().getStringArray(R.array.array_recyclerview_solution_videourl);
+        String[] solutionGifUrls = mContext.getResources().getStringArray(R.array.array_recyclerview_solution_gifurl);
 
         for (int i = 0; i < solutionItemNum; i++) {
             SolutionDataMode solutionDataItem = new SolutionDataMode();
@@ -53,22 +53,22 @@ public class AssertDataLoader implements DataLoad.OutService{
                     &&solutionImageUrls.length==solutionImageUrlNum
                     &&solutionImageLeftUrls.length==solutionSortImageUrlNum
                     &&solutionImageRightUrls.length==solutionSortImageUrlNum
-                    &&solutionVideoUrls.length==solutionVideoUrlNum){
+                    &&solutionGifUrls.length==solutionGifUrlNum){
 
-                solutionDataItem.solutionTitle = solutionTitles[i];
-                solutionDataItem.solutionSummary = solutionSummarys[i];
+                solutionDataItem.setTitle(solutionTitles[i]);
+                solutionDataItem.setSummary(solutionSummarys[i]);
 
                 if(i<4){
-                    solutionDataItem.solutionImageLeftUrl = solutionImageLeftUrls[i];
-                    solutionDataItem.solutionImageRightUrl = solutionImageRightUrls[i];
+                    solutionDataItem.setImageurl_left(solutionImageLeftUrls[i]);
+                    solutionDataItem.setImageurl_right(solutionImageRightUrls[i]);
                 }
 
                 if(i==4){
-                    solutionDataItem.solutionVideoUrl = solutionVideoUrls[0];
+                    solutionDataItem.setGifurl(solutionGifUrls[0]);
                 }
 
                 if(i>4&&i<9){
-                    solutionDataItem.solutionImageUrl = solutionImageUrls[i-5];
+                    solutionDataItem.setImageurl(solutionImageUrls[i-5]);
                 }
             }
 
@@ -83,13 +83,13 @@ public class AssertDataLoader implements DataLoad.OutService{
 
         String[] actionSubjectTitles = mContext.getResources().getStringArray(R.array.array_recyclerview_action_subject_title);
         String[] actionSubjectSummarys = mContext.getResources().getStringArray(R.array.array_recyclerview_action_subject_summary);
-        String[] actionSubjectVideoUrls = mContext.getResources().getStringArray(R.array.array_recyclerview_action_subject_videourl);
+        String[] actionSubjectGifUrls = mContext.getResources().getStringArray(R.array.array_recyclerview_action_subject_gifurl);
 
         for (int i = 0; i < actionSubjectTitles.length; i++) {
             ActionSubjectDataMode actionSubjectDataItem = new ActionSubjectDataMode();
-            actionSubjectDataItem.actionSbujectTitle = actionSubjectTitles[i];
-            actionSubjectDataItem.actionSubjectSummary = actionSubjectSummarys[i];
-            actionSubjectDataItem.actionSubjectVideoUrl = actionSubjectVideoUrls[i];
+            actionSubjectDataItem.setTitle(actionSubjectTitles[i]);
+            actionSubjectDataItem.setSummary(actionSubjectSummarys[i]);
+            actionSubjectDataItem.setGifurl(actionSubjectGifUrls[i]);
             actionSubjectDataArray.add(actionSubjectDataItem);
         }
         return actionSubjectDataArray;
@@ -187,4 +187,4 @@ public class AssertDataLoader implements DataLoad.OutService{
         }
         return interestDataArray;
     }
-}
+}*/

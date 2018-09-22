@@ -41,16 +41,16 @@ public class InterestDataAdapter extends RecyclerView.Adapter<InterestDataAdapte
     @Override
     public void onBindViewHolder(VH holder, final int position) {
         final InterestDataModel interestDataItem = mData.get(position);
-        holder.interestTitleTextView.setText(interestDataItem.interestTitle);
-        holder.interestSummaryTextTextView.setText(interestDataItem.interestSummary);
-        holder.interestSupportNumTextView.setText(interestDataItem.interestSupportNum);
+        holder.interestTitleTextView.setText(interestDataItem.getTitle());
+        holder.interestSummaryTextTextView.setText(interestDataItem.getSummary());
+        holder.interestSupportNumTextView.setText(interestDataItem.getSupportnum());
         RequestOptions options = new RequestOptions()
                 .diskCacheStrategy(DiskCacheStrategy.NONE);
-        Glide.with(mContext).load(interestDataItem.interestImageUrl).apply(options).into(holder.interestListItemImageImageView);
+        Glide.with(mContext).load(interestDataItem.getImageurl()).apply(options).into(holder.interestListItemImageImageView);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, interestDataItem.interestTitle + "被点击", Toast.LENGTH_LONG).show();
+                Toast.makeText(mContext, interestDataItem.getTitle() + "被点击", Toast.LENGTH_LONG).show();
             }
         });
     }
