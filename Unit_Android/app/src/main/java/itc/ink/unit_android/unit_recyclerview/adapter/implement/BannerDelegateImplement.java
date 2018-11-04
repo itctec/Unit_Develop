@@ -37,6 +37,8 @@ public class BannerDelegateImplement implements MainWrapperAdapter.DelegateInter
         public void OnBannerClick(int position) {
             Toast.makeText(mContext, "ChoicenessBanner" + position + "被点击", Toast.LENGTH_SHORT).show();
         }
+
+
     }
 
     private class MyLoader extends ImageLoader {
